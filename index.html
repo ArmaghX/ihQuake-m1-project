@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>ihQuake</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+          <div class="console-text">
+            <span> ihQuake v.1 </span>
+          </div>
+          <div>
+            <div class="vertical-bar">
+              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler">
+                <span class="user-icon"></span>
+              </button>
+              <p class="user-welcome">Welcome ${USER}</p>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main>
+      <div id="q-menu">
+        <div id="qsidebar">
+          <img src="./images/bars/lateral-bar.png" id="sidebar" alt="Quake Main Screen" width="50px"/>
+        </div>
+        <div id="q-main">
+          <div id="qtopbar">
+            <img src="./images/bars/top-bar.png" id="topbar" alt="Quake Menu" width="120px"/>
+          </div>
+          <div id="qnav-index">
+            <div class="sound">
+              <a class="link" href="./dashboard.html">DASHBOARD</a>
+            </div>
+            <div class="sound">
+              <a class="link" href="./signup.html" class="btn">SIGN UP</a>
+            </div>
+            <div class="sound">
+              <a class="link" href="./login.html" class="btn">LOG IN</a>
+            </div>
+            <div class="sound">
+              <a class="link" href="./faq.html" class="btn">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+        <div id="credits-text">
+          <p>ArmaghX930 Web Development</br> 
+            for Ironhack Barcelona. 2020</p>
+        </div>
+        <a href="#" target="_blank" id="credits-logo">
+          <img src="images/logo/logo-ihQuake.png" alt="ihQuake logo" width="50px" />
+        </a>
+    </footer>
+    <script src='./scripts/signup.js'></script>
+    <script src='./scripts/index.js'></script>
+    <script src='./scripts/index.js'></script>
+  </body>
+</html>
