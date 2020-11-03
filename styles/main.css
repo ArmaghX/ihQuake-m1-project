@@ -164,6 +164,20 @@ body {
 	
 }
 
+.message-container p {
+	background-color: darkred;
+	padding: 20px;
+	margin: 10px 0;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #feb1b1;
+}
+
+.message-container p.correct-message {
+	background-color: green;
+	box-shadow: 0 0 10px #dbf1c1;
+}
+
 
 /* MEDIA QUERIES */
 

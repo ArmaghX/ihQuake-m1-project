@@ -31,7 +31,7 @@ class Validator {
             emailExistsError: this.emailExistsError,
             passwordError: this.passwordError,
             repeatPasswordError: this.repeatPasswordError
-        }
+        };
 
     }
 
@@ -113,7 +113,7 @@ class Validator {
 
     // Get the errors to show them to the user on the Signup page
 
-    getError = () => {
+    getErrors = () => {
 
         return this.errors;
     }
@@ -121,3 +121,5 @@ class Validator {
 
 
 const validator = new Validator();
+
+console.log(validator);

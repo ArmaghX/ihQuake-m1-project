@@ -25,7 +25,7 @@ class Signup {
         validator.validateValidEmail(email);
         validator.validateUniqueEmail(email);
 
-        console.log(validator.errors);
+        this.setErrorMessages();
 
     };
 
@@ -42,7 +42,7 @@ class Signup {
         validator.validatePassword(password);
         validator.validateRepeatPassword(password, repeatPassword);
 
-        console.log(validator.errors);
+        this.setErrorMessages();
 
     };
 
@@ -50,8 +50,9 @@ class Signup {
     // password confirmation
 
     handleRepeatPasswordInput = (event) => {
-        const passwordInput = event.target;
-        const repeatPasswordInput = this.repeatPasswordInput;
+
+        const passwordInput = this.passwordInput;
+        const repeatPasswordInput = event.target;
 
         const password = passwordInput.value;
         const repeatPassword = repeatPasswordInput.value;
@@ -60,8 +61,32 @@ class Signup {
         validator.validatePassword(password);
         validator.validateRepeatPassword(password, repeatPassword);
 
-        console.log(validator.errors);
+        this.setErrorMessages();
     };
+
+    // used to show messages below the Signup form
+
+    setErrorMessages = () => {
+
+        // clear previous messages, so that they don't add up
+        this.errorsWrapper.innerHTML = "";
+
+        const errorsObj = validator.getErrors();
+
+        // return an array of object values ( only error strings )
+        const errorStringsArr = Object.values( errorsObj );
+
+        
+        errorStringsArr.forEach ( (str) => {
+            const p = document.createElement('p');
+            p.textContent = str;
+
+            this.errorsWrapper.appendChild(p);
+        });
+    };
+
+
+
 
     // handle the sending of the data (on submit)
 
