@@ -81,8 +81,8 @@ To be added.
 
 #### Git
 
-To be added.
+* [Project Site](https://armaghx930.github.io/ihQuake-m1-project/) 
 
 #### Slides
 
-To be added.# ihQuake-m1-project
+* [Presentation](https://docs.google.com/presentation/d/1R9rgNNzojlKqQPSxm6OomHU8G0EJR_KFECWbB5iEFlM/edit?usp=sharing)

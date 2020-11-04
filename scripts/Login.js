@@ -46,16 +46,25 @@ class Login {
 
         if (!user) {
             p.textContent = 'Email or Password are incorrect!';
-            this.messageContainer.appendChild(p);
+            //this.messageContainer.appendChild(p);
         }
         else {
             p.textContent = `Hello ${user.name}`;
             p.classList.add('correct-message');
+            // Redirect to the dashboard page
+            this.redirect();
         }
 
         this.messageContainer.appendChild(p);
+
     }
 
+    redirect = () => {
+        setTimeout( function () {
+            location.assign('../dashboard.html');
+        }, 2000)
+
+    }
 }
 
 
