@@ -1,16 +1,13 @@
 /* BASIC STYLES */
     
 
+/* BODY STYLES */
+
+
 body {
 	background: url('../images/background/alt-background-2.jpg') no-repeat center fixed;
     background-size: cover;
 }
-
-/* HEADER STYLES */
-      
-
-
-/* BODY STYLES */
 
 
 main {
@@ -43,16 +40,3 @@ main {
     margin: 40px;
     padding: 10px 15px;
 }
-
-/* MEDIA QUERIES */
-
-      
-/* From 768px and up */
-
-@media (min-width: 768px) {
-
-
-
-}
-     
-/* From 1024px and up */
