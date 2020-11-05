@@ -1,0 +1,61 @@
+/* BASIC STYLES */
+    
+
+body {
+	background: url('../images/background/alt-background-2.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+/* HEADER STYLES */
+      
+
+
+/* BODY STYLES */
+
+
+main {
+	font-family: Berkelium, DPQuake, Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	text-shadow: 0px 0px 18px rgb(0, 0, 0);
+}
+
+
+
+.login-form {
+    display: flex;
+	align-items: center;
+    flex-direction: column;
+    justify-content: center;
+	background-color: rgba(136, 83, 33, 0.349);
+	margin-top: 50px;
+	margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+
+.login-form input{
+    margin: 25px
+    
+}
+
+
+
+
+.login-form button {
+    font-family: Berkelium;
+    margin: 40px;
+    padding: 10px 15px;
+}
+
+/* MEDIA QUERIES */
+
+      
+/* From 768px and up */
+
+@media (min-width: 768px) {
+
+
+
+}
+     
+/* From 1024px and up */

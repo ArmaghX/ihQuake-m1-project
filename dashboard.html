@@ -15,23 +15,22 @@
           </div>
           <div>
             <div class="vertical-bar">
-              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler">
+              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler-button">
                 <span class="user-icon"></span>
               </button>
-              <p class="user-welcome">Welcome ${USER}</p>
             </div>
               <nav id="header-navbar" class="collapse">
                 <ul class="header-menu">
-                  <li><a class="link" href="./index.html">
+                  <li><a class="link-collapse" href="./index.html">
                    <span class="text">Home</span>
                   </a></li>
-                  <li><a class="link" href="./faq.html">
+                  <li><a class="link-collapse" href="./faq.html">
                    <span class="text">Faq</span>
                   </a></li>
-                  <li><a class="link" href="./signup.html">
+                  <li><a class="link-collapse" href="./signup.html">
                    <span class="text">Sign Up</span>
                   </a></li>
-                  <li><a class="link" href="./login.html">
+                  <li><a class="link-collapse" href="./login.html">
                    <span class="text">Log In</span>
                   </a></li>
                 </ul>
@@ -41,11 +40,25 @@
     </header>
     <main>
       <div id="q-menu">
-
-        <section class="list"></section>
+        <h1>Quake</h1>
+        <section class="game-info">
+        </section>
+        <section class="video-demo"></section>
+        <section class="dev-team">
+          <h2>The team behind the game</h2>
+        </section>
+        <section class="competition">
+          <h2>Competition</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/aXVXuQaAJlA?&mute=1" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen></iframe>
+          <a href="https://www.quakeworld.nu/" class="img-link" target="_blank">
+            <img src="images/logo/QuakeWorld.png" alt="quakeworld-nu" />
+          </a>
+        </section>
 
       </div>
+      
     </main>
+    <script src='./scripts/Main.js'></script>
     <script src='./scripts/rawgApiService.js'></script>
     <script src='./scripts/Database.js'></script>
   </body>

@@ -4,7 +4,8 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>ihQuake Sign Up</title>
-    <link rel="stylesheet" href="./styles/dashboard.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/signup.css">
   </head>
 
   <body>
@@ -15,23 +16,22 @@
           </div>
           <div>
             <div class="vertical-bar">
-              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler">
+              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler-button">
                 <span class="user-icon"></span>
               </button>
-              <p class="user-welcome">Welcome ${USER}</p>
             </div>
               <nav id="header-navbar" class="collapse">
                 <ul class="header-menu">
-                  <li><a class="link" href="./index.html">
+                  <li><a class="link-collapse" href="./index.html">
                    <span class="text">Home</span>
                   </a></li>
-                  <li><a class="link" href="./faq.html">
+                  <li><a class="link-collapse" href="./dashboard.html">
+                   <span class="text">Dashboard</span>
+                  </a></li>
+                  <li><a class="link-collapse" href="./faq.html">
                    <span class="text">Faq</span>
                   </a></li>
-                  <li><a class="link" href="./signup.html">
-                   <span class="text">Sign Up</span>
-                  </a></li>
-                  <li><a class="link" href="./login.html">
+                  <li><a class="link-collapse" href="./login.html">
                    <span class="text">Log In</span>
                   </a></li>
                 </ul>
@@ -42,10 +42,11 @@
 
     <main>
       <section class="signup">
-        <h2>Sign Up</h2>
         <div class="form-wrapper">
           <form class="signup-form" action="">
+            <h3>NAME</h3>
             <input type="text" id="name" placeholder="Name" />
+            <h3>FAVOURITE MAP</h3>
             <input list ="maps" id="fav-map" placeholder="Favourite Q1 Map">
             <datalist id="maps">
               <option value="e1m2">e1m2</option>
@@ -56,8 +57,11 @@
               <option value="ztndm3">ztndm3</option>
               <option value="aerowalk">aerowalk</option>
             </datalist>
+            <h3>EMAIL</h3>
             <input type="text" id="email" placeholder="Email" />
+            <h3>PASSWORD</h3>
             <input type="password" id="password" placeholder="Enter Password" />
+            <h3> REPEAT PASSWORD</h3>
             <input type="password" id="repeat-password" placeholder="Repeat Password" />
             <button type="submit" class="button" id="signup-button">
               Sign Up
@@ -72,5 +76,6 @@
     <script src='./scripts/User.js'></script>
     <script src='./scripts/Database.js'></script>
     <script src='./scripts/Validator.js'></script>
+    <script src='./scripts/Main.js'></script>
   </body>
 </html>

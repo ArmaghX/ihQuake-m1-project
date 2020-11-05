@@ -94,14 +94,15 @@ table {
 }
 
 .console-text {
-	border: 1px solid black;
     padding: 15px 0; 
 }
 
 .console-text span {
-	color: #f0760c;
+
+	font-size: 2rem;
 	font-weight: bold;
-	text-shadow: 2px 2px 2px #CE5937;
+	color: rgb(223, 124, 10);
+	text-shadow: 0px 0px 18px rgb(0, 0, 0);
 
 }
 
@@ -110,7 +111,6 @@ table {
 	position: relative;
 	flex-direction: row-reverse;
 	align-items: center;
-	border: 1px solid black; 
 }
 
 .vertical-bar p {
@@ -123,37 +123,76 @@ table {
 	text-shadow: 2px 2px 2px #CE5937;
 	font-weight: bolder;
 	letter-spacing: 2px;
-	border: 1px solid black; 
 }
 
 .nav-toggler {
 	background: rgba(255,153,0,0.1);
 }
 
-.user-icon {
+.nav-toggler-button {
 	background-image: url('../images/icons/FACE_INV2.png');
 	background-size: 100% 100%;
 	display: inline-block;
-	width: 2em;
-	height: 2em;
+	width: 3em;
+	height: 3em;
+	transition: all 0.7s;
+	border-color: black;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+.nav-toggler-button:hover {
+	background-image: url('../images/icons/FACE1.png');
+	background-size: 100% 100%;
+	display: inline-block;
+	width: 3em;
+	height: 3em;
+	transition: all 0.7s;
+	border-color: black;
+	box-shadow: 0 0 10px darkred;
+
 }
 
 #header-navbar {
-	height: 150px;
+	height: 225px;
 	display: block;
 	position: absolute;
-	right: 0;
-	background: grey;
-	opacity: 0.5;
+	right: 10px;
+	background: rgba(57, 7, 7, 0.801);
+	box-shadow: 0 0 10px darkred;
 	transition: all 1s;
 	z-index: 1;
 	overflow: hidden;
+	border-radius: 0.5em;
 }
 
 #header-navbar.collapse {
 	height: 0;
-	transition: height 1s;
+	transition: all 1s;
 }
+
+#header-navbar ul {
+	
+	padding: 8px 8px 8px 20px;
+	text-decoration: none;
+
+	  
+}
+
+#header-navbar ul li {
+	padding: 15px 15px;
+}
+
+.link-collapse {
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(231, 228, 228);
+	text-shadow: 0 0 15px darkred;
+    letter-spacing: 6px;
+    
+}
+
 
 
 /* BODY STYLES */
@@ -165,9 +204,14 @@ body {
 }
 
 .message-container p {
+	display: flex;
+	align-items: center;
 	background-color: darkred;
+	text-align: center;
+	font-size: 20px;
+	width: 200px;
 	padding: 20px;
-	margin: 10px 0;
+	margin: 10px auto;
 	color: white;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #feb1b1;

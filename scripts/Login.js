@@ -49,7 +49,7 @@ class Login {
             //this.messageContainer.appendChild(p);
         }
         else {
-            p.textContent = `Hello ${user.name}`;
+            p.textContent = `Welcome ${user.name}`;
             p.classList.add('correct-message');
             // Redirect to the dashboard page
             this.redirect();

@@ -4,30 +4,66 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>ihQuake FAQ</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/faq.css">
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <div id="menu-btn">
-            <div class="menu-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+      <div class="wrapper">
+          <div class="console-text">
+            <span> ihQuake v.1 </span>
           </div>
-        </div>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="dashboard.html">DASHBOARD</a></li>
-          <li><a href="signup.html">SIGN UP</a></li>
-          <li><a href="login.html">LOG IN</a></li>
-        </ul>
-      </nav>
+          <div>
+            <div class="vertical-bar">
+              <button type="button" data-toggle="collapse" data-target="#header-navbar" class="nav-toggler-button">
+                <span class="user-icon"></span>
+              </button>
+            </div>
+              <nav id="header-navbar" class="collapse">
+                <ul class="header-menu">
+                  <li><a class="link-collapse" href="./index.html">
+                   <span class="text">Home</span>
+                  </a></li>
+                  <li><a class="link-collapse" href="./dashboard.html">
+                   <span class="text">Dashboard</span>
+                  </a></li>
+                  <li><a class="link-collapse" href="./signup.html">
+                   <span class="text">Sign Up</span>
+                  </a></li>
+                  <li><a class="link-collapse" href="./login.html">
+                   <span class="text">Log In</span>
+                  </a></li>
+                </ul>
+              </nav>
+          </div>
+      </div>
     </header>
-    <script src='./scripts/signup.js'></script>
-    <script src='./scripts/index.js'></script>
-    <script src='./scripts/index.js'></script>
+    <main>
+      <div id="q-menu">
+        <section class="faq">
+          <h2>FAQ</h2>
+          <h3>How to play Quake nowadays?</h3>
+          <p>Technically you can play without a source port, but I would consider source 
+            ports the ESSENTIAL experience for playing Quake nowadays.
+            Mark V is my personal favorite, but Quakespasm is what most people use.
+            Both ports are super similar, and most custom maps work with both, so either choice is valid.</p>
+          <h3>Best Quake Mod</h3>
+          <p>The crown jewel of modern Quake mods is Arcane Dimensions, a massive collaborative dev-jam combining 
+            the talents of the best and brightest Quake community's mappers and modders. It's the biggest mod 
+            (in terms of megabyte tonnage) in Quake history, weighing in at a staggering 210mb zipped.</p>
+          <h3>How to play Quake Online?</h3>
+          <p>With QuakeWorld, an official Multiplayer source port made by id Software for Quake that was released in December of 1996. 
+              In QW there are three different armor types coloured green, yellow and red. They all give different amounts of armor and of 
+              different quality, with red being the best one and green the worst. Probably the most famous feature of QuakeWorld is bunny jumping, 
+              but its possible to play QuakeWorld without utilizing that one particular skill.</p>
+          <h3>How is the competition format?</h3>
+          <p>The most common play style in QuakeWorld, like in all other Quake games, is duel. 
+            Your normal duel in Quakeworld is played with a 10 minute limit, spawn health is set to 100, 
+            weapons don't respawn and they can only be picked up once. If the score is equal at the end there is 3 minute overtime. 
+            The popular duel maps are dm4, dm6, aerowalk, ztndm3 and dm2.</p>
+        </section>
+      </div>
+    </main>
+    <script src='./scripts/Main.js'></script>
   </body>
 </html>
