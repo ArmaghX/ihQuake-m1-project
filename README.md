@@ -10,7 +10,7 @@ As far as I remember, **Quake** was the very first competitive computer video ga
 
 
 
-## MVP (DOM - CANVAS)
+## MVP
 
 The MVP will include:
 
@@ -24,7 +24,9 @@ The MVP will include:
 
 ## Backlog
 
-To be added.
+* Add JavaScript keyboard response over the Index Navigation Menu (on arrow keys) .
+* Add Sign Up success message.
+* Add extra animation features.
 
 
 
@@ -53,20 +55,6 @@ To be added.
 
   
 
-## States y States Transitions
-
-Definition of the different states and their transition (transition functions)
-
-- splashScreen
-
-- gameScreen
-
-- gameoverScreen
-
-- winScreen
-
-  
-
 ## Wireframes
 
 * [Wireframe Design](https://share.balsamiq.com/c/6gLa2ryBE52dRh21yRHGPJ.png)
@@ -77,7 +65,7 @@ Definition of the different states and their transition (transition functions)
 
 #### Trello
 
-To be added.
+* [My Trello Board](https://trello.com/b/dc3pXZmh)
 
 #### Git
 
