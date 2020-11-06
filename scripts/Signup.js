@@ -118,7 +118,19 @@ class Signup {
         this.emailInput.value = '';
         this.passwordInput.value = '';
 
+        // redirect invoke
+        this.redirect();
+        
     };
+
+    // redirect to the login page
+
+    redirect = () => {
+        setTimeout( function (){
+            location.assign('../login.html');
+        }, 2000)
+
+    }
 
     // function to add listeners
 
