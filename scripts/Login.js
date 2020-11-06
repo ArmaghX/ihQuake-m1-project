@@ -61,7 +61,7 @@ class Login {
 
     redirect = () => {
         setTimeout( function () {
-            location.assign('../dashboard.html');
+            location.assign('dashboard.html');
         }, 2000)
 
     }

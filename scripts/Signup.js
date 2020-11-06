@@ -127,7 +127,7 @@ class Signup {
 
     redirect = () => {
         setTimeout( function (){
-            location.assign('../login.html');
+            location.assign('login.html');
         }, 2000)
 
     }
